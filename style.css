@@ -2,6 +2,7 @@
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
+  font-family:  'Montserrat', sans-serif;
 }
 
 .padre{
@@ -9,7 +10,10 @@
     flex-flow: column nowrap;
 }
         .header{
-            background: #000;
+            background: url(./img/pexels-francesco-ungaro-2325446.jpg);
+            background-position: center;
+            background-attachment: contain;
+            background-size: cover;
             display: flex;
             flex-flow: column nowrap;
             /* align-items: center; */
@@ -17,7 +21,7 @@
         }
 
             .menu{
-                background: #2d4059;
+                /* background: #2d4059; */
                 display: flex;
                 flex-flow: row nowrap;
                 height: 100%;
@@ -26,31 +30,51 @@
 
             }
                     .logo{
-                        background: #ea5455;
+                        background: url(./img/Logo\ Colfiltes\ Completo2_icon.ico);
+                        background-position: center;
+                        background-attachment: contain;
+                        background-size:50%;
+                        background-repeat: no-repeat;
+                        width: auto;
+                        height: 85px;
+                        line-height: 100px;
                         flex: 1 1 auto;
                         align-self: auto;
-                        height: 30px;
+                       
                         
                     }
                     .nav{
-                        background: #ea5455;
+                        /* background: #ea5455; */
                         flex: 5 1 auto;
                         align-self: auto;
-                        height: 30px;
+                    }
+
+                    .nav a{
+                        text-decoration: none;
+                        font-size: 15px;
+                        color: #fafafa;
+                 
                     }
                     .social{
-                        background: #ea5455;
+                        /* background: #ea5455; */
                         flex: 1 1 auto;
                         align-self: auto;
-                        height: 30px;
+                        color: #f7f7f7;
+                      
                     }
 
                 .texto_principal{
-                    background: #f07b3f;
+                    /* background: #f07b3f; */
+                    color: #f7f7f7;
+                    text-align: center;
                 }
 
                     h1{
-                        background: #ffd460;
+                        /* background: #ffd460; */
+                        font-size:larger;
+                        line-height: 30px;
+                        letter-spacing: 1px;
+                    
                     }
 
 
@@ -64,16 +88,27 @@
                 display: flex;
                 flex: 2 1 auto;
                 flex-flow: row wrap;
+            
             }
 
                 .article{
                     background: #1f6cb0; 
                     flex: 1 1 40%;
                 }
+                .article img{
+                    width: 100%;
+                }
             
                 .navegacion{
-                    background: #70e3c4;
+                    background: #090909;
                     flex: 1 1 100%;
+                    text-decoration: none;
+                }
+                .navegacion a{
+                    text-decoration: none;
+                }
+                .navegacion a:hover{
+                    color:#f73f52;
                 }
             .aside{
                 background: #f73f52;
@@ -81,12 +116,17 @@
             }
                     .publicidad{
                         background: #ffea85;
+                       
+                    }
+                    .publicidad img{
+                        width: 100%;
                     }
 
         .footer{
             background: #000;
             display: flex;
             justify-content: center;
+            text-align: center;
         }
         .pie{
             background: #e6af2e;
